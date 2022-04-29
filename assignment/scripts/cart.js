@@ -26,3 +26,35 @@ basket.forEach(function(empty){
    console.log(basket.length = 0);
 })
 console.log(basket);
+
+
+
+//2. Create a function called isFull(). It should:
+  //- return `false` if the basket contains *less* than max number of items
+  //- return `true` otherwise (equal or more than maxItems)
+
+
+const maxItems = 5;
+
+function isFull(){
+    if(basket< maxItems){
+        return false;
+    }
+    else(basket => maxItems);{
+        return true;
+    }
+}
+console.log( isFull() );
+
+
+//3. Update the required `addItem` function to:
+  //- Use the `isFull` function to prevent more than `maxItems` from being added to the basket. 
+  //- If an item was added to the array, return `true`
+  //- If there was no room and the item could not be added return `false`
+
+  function addItem(item){
+    basket.push(item);
+    return true;
+}
+
+addItem()
