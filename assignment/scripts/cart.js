@@ -12,13 +12,9 @@ console.log(`Basket is ${basket}`);
 console.log('Adding apples (expect true)', addItem(' apples '));
 console.log('adding pizza  (expect true)', addItem(' pizza '))
 console.log('adding popcorn  (expect true)', addItem(' popcorn '))
-console.log('adding chicken  (expect true)', addItem('chicken'))
+console.log('adding chicken  (expect true)', addItem(' chicken '))
 console.log(`Basket is now ${basket}`);
 
-function listItems(basket){
- for(let i=0; i< basket.length; i++){
-    console.log(basket[i]);   
- }
-}
-
-console.log(listItems(basket));
+basket.forEach(function(listItems){
+console.log(listItems);
+})
