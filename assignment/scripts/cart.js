@@ -15,6 +15,14 @@ console.log('adding popcorn  (expect true)', addItem(' popcorn '))
 console.log('adding chicken  (expect true)', addItem(' chicken '))
 console.log(`Basket is now ${basket}`);
 
+
 basket.forEach(function(listItems){
 console.log(listItems);
 })
+
+
+
+basket.forEach(function(empty){
+   console.log(basket.length = 0);
+})
+console.log(basket);
