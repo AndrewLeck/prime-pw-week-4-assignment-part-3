@@ -16,6 +16,18 @@ console.log('adding chicken  (expect true)', addItem(' chicken '))
 console.log(`Basket is now ${basket}`);
 
 
+//- Create a function called `listItems`. It should:
+  //- loop over the items in the `basket` array
+  //- console.log each individual item on a new line
+
+function listItems(){
+
+}
+
+
+
+
+
 basket.forEach(function(listItems){
 console.log(listItems);
 })
@@ -37,10 +49,10 @@ console.log(basket);
 const maxItems = 5;
 
 function isFull(){
-    if(basket< maxItems){
+    if(basket.length < maxItems){
         return false;
     }
-    else(basket => maxItems);{
+    else(basket.length => maxItems);{
         return true;
     }
 }
