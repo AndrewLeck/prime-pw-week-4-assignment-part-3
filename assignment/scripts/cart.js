@@ -20,26 +20,18 @@ console.log(`Basket is now ${basket}`);
   //- loop over the items in the `basket` array
   //- console.log each individual item on a new line
 
-function listItems(){
-
+function listItems(array){
+  for(let i=0; i<= array.length-1; i++){
+    console.log(array[i]);
+  }
 }
+listItems(basket);
 
-
-
-
-
-basket.forEach(function(listItems){
-console.log(listItems);
-})
-
-
-
-basket.forEach(function(empty){
-   console.log(basket.length = 0);
-})
-console.log(basket);
-
-
+function empty(array){
+  array.splice(0,array.length);
+    console.log(array)
+}
+empty(basket);
 
 //2. Create a function called isFull(). It should:
   //- return `false` if the basket contains *less* than max number of items
@@ -52,21 +44,10 @@ function isFull(){
     if(basket.length < maxItems){
         return false;
     }
-    else(basket.length => maxItems);{
+    else(basket.length >= maxItems);{
         return true;
     }
 }
 console.log( isFull() );
 
 
-//3. Update the required `addItem` function to:
-  //- Use the `isFull` function to prevent more than `maxItems` from being added to the basket. 
-  //- If an item was added to the array, return `true`
-  //- If there was no room and the item could not be added return `false`
-
-  function addItem(item){
-    basket.push(item);
-    return true;
-}
-
-addItem()
